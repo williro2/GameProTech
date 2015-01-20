@@ -1,5 +1,37 @@
-body {font: 24px "Comic Sans MS", cursive;}
-h1 {text-align: center;}
-h2 {text-align: center;}
-div {margin: 0 auto;}
-iframe {display: block; width: 560px; height: 315px; margin: 0 auto; frameborder: 0px;}
+body {
+	  font:24px "Comic Sans MS", cursive;
+	  background:#000;
+	  margin:0px;
+}
+div.header {					/*header tutorial from http://www.cssreset.com/creating-fixed-headers-with-css/*/
+		height:50px;
+		background:#F2F2F2;
+		border:1px solid #ccc;
+		position:fixed;
+		top:0px;
+		width:100%;
+}		
+div.header p {
+		margin:0;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-right:-50%;
+		transform:translate(-50%, -50%)
+}
+div.content {
+		  width:95%;
+		  background:#FFFFFF;
+		  border:1px solid #ccc;
+		  height:1500px;
+		  margin:20px auto;
+}
+h1 {
+	text-align:center;
+}
+h2 {
+	text-align:center;
+}
+iframe {
+	   display: block; width: 560px; height: 315px; margin: 0 auto; frameborder: 0px;
+}
